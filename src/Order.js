@@ -1,4 +1,4 @@
-import { addOrder } from "./loyalty"; // ✅ move to top
+import { addOrder } from "./Loyalty.js"; // ✅ move to top
 
 let currentState = welcoming;
 

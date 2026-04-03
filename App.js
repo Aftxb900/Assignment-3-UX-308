@@ -3,13 +3,13 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { FAB, Portal, Modal, TextInput, Provider, Button } from "react-native-paper";
 
 import { handleInput } from "./src/Order";
-import { getPoints } from "./src/loyalty";
+import { getPoints } from "./src/Loyalty";
 
 export default function App() {
-  const [visible, setVisible] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const [points, setPoints] = useState(getPoints());
+  const [points, setPoints] = useState(0);
+  const [visible, setVisible] = useState(false);
 
   const scrollViewRef = useRef();
 
